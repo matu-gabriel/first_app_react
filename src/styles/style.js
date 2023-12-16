@@ -87,7 +87,7 @@ export const ListUser = styled.li`
   border-radius: 14px;
   width: 342px;
   height: 50px;
-  padding-left: 25px;
+  padding: 0 25px;
   outline: none;
   font-size: 24px;
   line-height: 28px;
@@ -96,9 +96,11 @@ export const ListUser = styled.li`
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  img {
+  button {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 `;
