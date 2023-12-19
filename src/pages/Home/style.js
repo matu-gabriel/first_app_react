@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Background from "../assets/img/bg_image2.svg";
+import Background from "../../assets/img/bg_image2.svg";
 
 export const Container = styled.div`
   background: url("${Background}");
@@ -14,24 +14,6 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   margin-top: 30px;
-`;
-
-export const ContainerItens = styled.div`
-  background-color: rgba(172, 115, 221, 0.7);
-  height: 100%;
-  border-radius: 61px 61px 0 0;
-  padding: 50px 36px;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Title = styled.h1`
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 40px;
-  color: #fff;
 `;
 
 export const InputLabel = styled.p`
@@ -51,7 +33,7 @@ export const Input = styled.input`
   outline: none;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.25);
 `;
 
@@ -71,7 +53,6 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 30px 0;
 
   &:hover {
     opacity: 0.8;
@@ -79,28 +60,5 @@ export const Button = styled.button`
 
   &:active {
     opacity: 0.6;
-  }
-`;
-
-export const ListUser = styled.li`
-  border: none;
-  border-radius: 14px;
-  width: 342px;
-  height: 50px;
-  padding: 0 25px;
-  outline: none;
-  font-size: 24px;
-  line-height: 28px;
-  margin: 40px 0;
-  background: rgba(255, 255, 255, 0.25);
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
   }
 `;
