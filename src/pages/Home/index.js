@@ -1,10 +1,11 @@
-import { Container, Image, InputLabel, Input, Button } from "./style";
+import { Container, Image, InputLabel, Input } from "./style";
 
 import Peoples from "../../assets/img/peoples.svg";
 import Arrow from "../../assets/img/arrow.svg";
 
 import H1 from "../../components/Title";
 import ContainerItens from "../../components/Container";
+import Button from "../../components/Button";
 
 import { useState, useRef } from "react";
 import axios from "axios";

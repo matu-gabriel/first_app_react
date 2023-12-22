@@ -1,4 +1,4 @@
-import { Container, Image, Button, ListUser } from "./style";
+import { Container, Image, ListUser } from "./style";
 
 import Avatars from "../../assets/img/avatars.svg";
 import Arrow from "../../assets/img/arrow.svg";
@@ -6,6 +6,7 @@ import Trash from "../../assets/img/trash.svg";
 
 import H1 from "../../components/Title";
 import ContainerItens from "../../components/Container";
+import Button from "../../components/Button";
 
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -41,7 +42,7 @@ function User() {
   return (
     <Container>
       <Image src={Avatars} />
-      <ContainerItens>
+      <ContainerItens isUser={true}>
         <H1>Usuários</H1>
 
         <ul>
@@ -54,7 +55,7 @@ function User() {
             </ListUser>
           ))}
         </ul>
-        <Button onClick={goToHome}>
+        <Button btnBack={true} onClick={goToHome}>
           <img src={Arrow} alt="Arrow" /> Voltar
         </Button>
       </ContainerItens>

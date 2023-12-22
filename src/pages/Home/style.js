@@ -36,29 +36,3 @@ export const Input = styled.input`
   margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.25);
 `;
-
-export const Button = styled.button`
-  background: rgba(0, 0, 0, 0.8);
-  border: none;
-  width: 342px;
-  height: 74px;
-  border-radius: 14px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 28px;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-`;

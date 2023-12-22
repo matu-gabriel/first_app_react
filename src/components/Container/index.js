@@ -1,7 +1,7 @@
 import { ContainerItens } from "./style";
 
-function Container({ children }) {
-  return <ContainerItens>{children}</ContainerItens>;
+function Container({ children, ...props }) {
+  return <ContainerItens {...props}>{children}</ContainerItens>;
 }
 
 export default Container;

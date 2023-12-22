@@ -4,39 +4,16 @@ import Background from "../../assets/img/bg_image1.svg";
 export const Container = styled.div`
   background: url("${Background}");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  /* justify-content: center; */
+  min-height: 100vh;
 `;
 
 export const Image = styled.img`
   margin-top: 30px;
-`;
-
-export const Button = styled.button`
-  background: transparent;
-  border: 1px solid #fff;
-  width: 342px;
-  height: 74px;
-  border-radius: 14px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 28px;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-
-  img {
-    transform: rotateY(180deg);
-  }
 `;
 
 export const ListUser = styled.li`
